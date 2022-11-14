@@ -9,7 +9,6 @@ class App extends React.Component{
                 <Product />
                 <Product />
                 <Product />
-                <Product />
             </div>
         );
     }
