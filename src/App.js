@@ -1,12 +1,18 @@
+import React from "react";
 import Product from "./components/Product/Product"
 
-const App = () => {
-    return (
-        <div id="main" className="container">
-            <h2>React App</h2>
-            <Product />
-        </div>
-    );
+class App extends React.Component{
+    render() {
+        return (
+            <div id="main" className="container">
+                <h2>React App</h2>
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+            </div>
+        );
+    }
 }
 
 export default App;
