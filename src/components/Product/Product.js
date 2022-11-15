@@ -1,8 +1,9 @@
 const Product = (props) => {
    return (
     <div>
-        <div>Product Name: {props.title}</div>
-        <div>Product Price: {props.price}</div>
+        <p>Product Name: {props.title}</p>
+        <p>Product Price: {props.price}</p>
+        <p>{props.children}</p>
     </div>
   )
 }
