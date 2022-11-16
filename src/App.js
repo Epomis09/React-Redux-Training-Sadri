@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Product from "./components/Product/Product"
+import "./App.css"
 
 // const App = () => {
 
@@ -64,8 +65,8 @@ class App extends React.Component{
 
     render() {
         return (
-            <div id="main" className="container">
-                <h2>React App</h2>
+            <div className="center">
+                <h2>Book Store</h2>
                 <Product
                     title={this.state.products[0].title}
                     price={this.state.products[0].price}
