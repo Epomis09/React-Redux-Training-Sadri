@@ -38,24 +38,22 @@ class App extends React.Component{
     }
 
     render() {
-    const btn = {
-        backgroundColor: '#7b1fa2',
-        color: '#fff',
-        font: 'inherit',
-        border: 'none',
-        outline: 'none',
-        borderRadius: '3px',
-        padding: '0.6rem',
-        margin: '0.6rem auto',
-        cursor: 'pointer'
-    }
+        const btn = {
+            backgroundColor: '#7b1fa2',
+            color: '#fff',
+            font: 'inherit',
+            border: 'none',
+            outline: 'none',
+            borderRadius: '3px',
+            padding: '0.6rem',
+            margin: '0.6rem auto',
+            cursor: 'pointer'
+        }
 
-        return (
-            <div className="center">
-                <h2>Book Store</h2>
-                <button style={btn} onClick={this.toggleProductHandler}>Show/Hide Products</button>
-                { this.state.showProducts ?
-                    (<div>
+        let products = null;
+        if (this.state.showProducts) {
+            products = (
+                <div>
                     <Product
                         title={this.state.products[0].title}
                         price={this.state.products[0].price}
@@ -69,7 +67,15 @@ class App extends React.Component{
                         title={this.state.products[2].title}
                         price={this.state.products[2].price}
                     />
-                </div>) : null}
+                </div>
+            )
+        }
+
+        return (
+            <div className="center">
+                <h2>Book Store</h2>
+                <button style={btn} onClick={this.toggleProductHandler}>Show/Hide Products</button>
+                {products}
             </div>
         );
     }
