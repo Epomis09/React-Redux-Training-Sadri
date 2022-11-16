@@ -74,6 +74,18 @@ class App extends React.Component{
     }
 
     render() {
+    const btn = {
+        backgroundColor: '#7b1fa2',
+        color: '#fff',
+        font: 'inherit',
+        border: 'none',
+        outline: 'none',
+        borderRadius: '3px',
+        padding: '0.6rem',
+        margin: '0.6rem auto',
+        cursor: 'pointer'
+    }
+
         return (
             <div className="center">
                 <h2>Book Store</h2>
@@ -92,7 +104,7 @@ class App extends React.Component{
                     // click={this.changePriceHandler.bind(this, "New Title")}
                     click={() => this.changePriceHandler("New Title")}
                 />
-                <button onClick={this.changePriceHandler}>Change Price</button>
+                <button style={btn}>Change Price</button>
             </div>
         );
     }
