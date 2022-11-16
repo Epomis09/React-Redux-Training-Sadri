@@ -54,19 +54,9 @@ class App extends React.Component{
         if (this.state.showProducts) {
             products = (
                 <div>
-                    <Product
-                        title={this.state.products[0].title}
-                        price={this.state.products[0].price}
-                    />
-                    <Product
-                        title={this.state.products[1].title}
-                        price={this.state.products[1].price}
-                        change={this.changeTitleHandler}
-                    />
-                    <Product
-                        title={this.state.products[2].title}
-                        price={this.state.products[2].price}
-                    />
+                    {this.state.products.map(item => {
+                        return <Product title={item.title} price={item.price}/>
+                    })}
                 </div>
             )
         }
