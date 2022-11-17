@@ -22,14 +22,18 @@ class App extends React.Component{
         })
     }
 
-    changeTitleHandler = (event) => {
-        this.setState({
-            products : [
-                { title: "Book 1", price: "59" },
-                { title: event.target.value, price: "59" },
-                { title: "Book 3", price: "59" }
-            ],
+    changeTitleHandler = (event, id) => {
+        const productIndex = this.state.products.findIndex((item) =>{
+            return item.id === id;
         })
+
+        const product = {...this.state.products[productIndex]};
+        product.title = event.target.value;
+        
+        const products = [...this.state.products];
+        products[productIndex] = product;
+        this.setState({ products: products })
+
     }
 
     toggleProductHandler = () => {
@@ -65,6 +69,7 @@ class App extends React.Component{
                             click={() => this.deleteProductHandler(index)}
                             title={item.title}
                             price={item.price}
+                            change={(event) => {this.changeTitleHandler(event, item.id)}}
                             key={item.id}
                         />
                     })}
