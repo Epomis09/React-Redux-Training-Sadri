@@ -5,9 +5,9 @@ import "./App.css"
 class App extends React.Component{
     state = {
         products : [
-            { title: "Book 1", price: "99" },
-            { title: "Book 2", price: "89" },
-            { title: "Book 3", price: "79" }
+            { id:1, title: "Book 1", price: "99" },
+            { id: 2, title: "Book 2", price: "89" },
+            { id:3, title: "Book 3", price: "79" }
         ],
         showProducts: false,
     }
@@ -65,6 +65,7 @@ class App extends React.Component{
                             click={() => this.deleteProductHandler(index)}
                             title={item.title}
                             price={item.price}
+                            key={item.id}
                         />
                     })}
                 </div>
