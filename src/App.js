@@ -1,6 +1,7 @@
 import React from "react";
-import Product from "./components/Product/Product"
+import Main from "./components/Main/Main"
 import "./App.css"
+import ProductList from "./components/ProductList/ProductList";
 
 class App extends React.Component{
     state = {
@@ -48,39 +49,23 @@ class App extends React.Component{
     }
 
     render() {
-        const btn = {
-            backgroundColor: '#7b1fa2',
-            color: '#fff',
-            font: 'inherit',
-            border: 'none',
-            outline: 'none',
-            borderRadius: '3px',
-            padding: '0.6rem',
-            margin: '0.6rem auto',
-            cursor: 'pointer'
-        }
 
         let products = null;
         if (this.state.showProducts) {
             products = (
                 <div>
-                    {this.state.products.map((item, index) => {
-                        return <Product
-                            click={() => this.deleteProductHandler(index)}
-                            title={item.title}
-                            price={item.price}
-                            change={(event) => {this.changeTitleHandler(event, item.id)}}
-                            key={item.id}
-                        />
-                    })}
+                    <ProductList
+                        products={this.state.products}
+                        click={this.deleteProductHandler}
+                        change={this.changeTitleHandler}    
+                    />
                 </div>
             )
         }
 
         return (
             <div className="center">
-                <h2>Book Store</h2>
-                <button style={btn} onClick={this.toggleProductHandler}>Show/Hide Products</button>
+                <Main  click={this.toggleProductHandler}/>
                 {products}
             </div>
         );
