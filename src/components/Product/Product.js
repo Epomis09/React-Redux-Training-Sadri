@@ -1,6 +1,7 @@
 import "./Product.css"
 
 const Product = (props) => {
+  console.log("product");
    return (
     <div className="product">
         <p onClick={props.click}>Product Name: {props.title}</p>
