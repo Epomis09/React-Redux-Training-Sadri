@@ -43,7 +43,6 @@ constructor(props) {
         const products = [...this.state.products];
         products[productIndex] = product;
         this.setState({ products: products })
-
     }
 
     toggleProductHandler = () => {
