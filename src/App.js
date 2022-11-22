@@ -4,6 +4,11 @@ import Main from "./components/Main/Main"
 import ProductList from "./components/ProductList/ProductList";
 
 class App extends React.Component{
+constructor(props) {
+    super(props);
+    console.log('App.js constructor');
+}
+
     state = {
         products : [
             { id: 1, title: "Book 1", price: "99" },
@@ -23,6 +28,10 @@ class App extends React.Component{
         })
     }
 
+    componentDidMount() {
+        console.log("App.js componentDidMount");
+    }
+
     changeTitleHandler = (event, id) => {
         const productIndex = this.state.products.findIndex((item) =>{
             return item.id === id;
@@ -34,7 +43,6 @@ class App extends React.Component{
         const products = [...this.state.products];
         products[productIndex] = product;
         this.setState({ products: products })
-
     }
 
     toggleProductHandler = () => {
@@ -49,7 +57,7 @@ class App extends React.Component{
     }
 
     render() {
-
+        console.log('App.js render');
         let products = null;
         if (this.state.showProducts) {
             products = (

@@ -1,6 +1,7 @@
 import Product from '../Product/Product';
 
 const ProductList = (props) => {
+    console.log("ProductList");
     return props.products.map((item, index) => {
         return <Product
             click={() => props.click(index)}
