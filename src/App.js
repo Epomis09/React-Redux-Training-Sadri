@@ -32,6 +32,15 @@ constructor(props) {
         console.log("App.js componentDidMount");
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('App.js shouldComponentUpdate');
+        return true;
+    }
+
+    componentDidUpdate() {
+        console.log("App.js componentDidUpdate");
+    }
+
     changeTitleHandler = (event, id) => {
         const productIndex = this.state.products.findIndex((item) =>{
             return item.id === id;
