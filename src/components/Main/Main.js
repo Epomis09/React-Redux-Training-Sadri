@@ -1,5 +1,10 @@
+import { useEffect } from "react";
 
 const Main = (props) => {
+    useEffect(() => {
+        console.log('Main.js useEffect');
+    });
+
     const btn = {
         backgroundColor: '#7b1fa2',
         color: '#fff',

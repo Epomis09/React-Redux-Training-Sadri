@@ -1,3 +1,49 @@
+# React & Redux Course
+
+This repository based on Sadri's React & Redux Course 
+
+- 01- Requirements
+- 02- How to learn better
+- 03- Course titles
+- 04- React library
+- 05- Using redux
+- 06- Packages
+- 07- Dev environment
+- 08- Setup create react app
+- 09- First react code
+- 10- Components in react
+- 11- JSX syntax
+- 12- Using components
+- 13- Type of components
+- 14- Dynamic data
+- 15- Working with props
+- 16- Using children prop
+- 17- Understanding state
+- 18- Handling events
+- 19- Change state
+- 20- Using useState
+- 21- Stateful and stateless components
+- 22- Adding styles
+- 23- Passing methods in components
+- 24- Bind method
+- 25- Inline styles
+- 26- Rendering content conditionally
+- 27- Handling dynamic content
+- 28- Outputting lists
+- 29- Delete list
+- 30- Updating state better approach
+- 31- Key in lists
+- 32- Dynamic lists
+- 33- Project structure
+- 34- Splitting code into components
+- 35- Component lifecycle
+- 36- Component lifecycle in project
+- 37- Component update lifecycle
+- 38- Lifecycle for props changes
+- 39- Lifecycle for state changes
+- 40- UseEffect in functional components
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
