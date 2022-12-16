@@ -82,7 +82,10 @@ constructor(props) {
 
         return (
             <div className="center">
-                <Main  click={this.toggleProductHandler}/>
+                <Main 
+                    products={this.state.products}
+                    click={this.toggleProductHandler}
+                />
                 {products}
             </div>
         );

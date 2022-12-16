@@ -42,6 +42,8 @@ This repository based on Sadri's React & Redux Course
 - 38- Lifecycle for props changes
 - 39- Lifecycle for state changes
 - 40- UseEffect in functional components
+- 41- Handling useEffect
+
 
 
 # Getting Started with Create React App
