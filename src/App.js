@@ -16,6 +16,7 @@ constructor(props) {
             { id: 3, title: "Book 3", price: "79" }
         ],
         showProducts: false,
+        showMain: true,
     }
     
     changePriceHandler = (newTitle) => {
@@ -82,10 +83,12 @@ constructor(props) {
 
         return (
             <div className="center">
+                <button onClick = {() => this.setState({ showMain: false})}>Remove Main</button>
+                {this.state.showMain ?
                 <Main 
                     products={this.state.products}
                     click={this.toggleProductHandler}
-                />
+                /> : null }
                 {products}
             </div>
         );
