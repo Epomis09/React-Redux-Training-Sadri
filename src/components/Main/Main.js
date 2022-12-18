@@ -6,6 +6,9 @@ const Main = (props) => {
         setTimeout(() => {
             alert("HTTP Request!");
         }, 2000);
+        return () => {
+            console.log('Main.js cleanup');
+        }
     }, []);
 
     const btn = {
