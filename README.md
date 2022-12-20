@@ -49,6 +49,7 @@ This repository based on Sadri's React & Redux Course
 - 45- Higher Order Components
 - 46- Dynamic HOC
 - 47- Passing props
+- 48- Using ref
 
 
 # Getting Started with Create React App
