@@ -45,6 +45,7 @@ This repository based on Sadri's React & Redux Course
 - 41- Handling useEffect
 - 42- Clean up with useEffect
 - 43- Rendering adjacent JSX elements
+- 44- Using react fragment
 
 
 # Getting Started with Create React App
