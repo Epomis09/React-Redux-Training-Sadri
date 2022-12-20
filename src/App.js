@@ -3,6 +3,7 @@ import "./App.css"
 import Main from "./components/Main/Main"
 import ProductList from "./components/ProductList/ProductList";
 import Wrapper from "./hoc/Wrapper";
+import Container from "./hoc/Container";
 
 class App extends React.Component{
 constructor(props) {
@@ -83,7 +84,7 @@ constructor(props) {
         }
 
         return (
-            <Wrapper center="center">
+            <Container>
                 <button onClick = {() => this.setState({ showMain: false})}>Remove Main</button>
                 {this.state.showMain ?
                 <Main 
@@ -91,9 +92,9 @@ constructor(props) {
                     click={this.toggleProductHandler}
                 /> : null }
                 {products}
-            </Wrapper>
+            </Container>
         );
     }
 }
 
-export default App;
+export default Wrapper(App, "center");
