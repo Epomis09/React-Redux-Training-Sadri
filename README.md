@@ -48,6 +48,7 @@ This repository based on Sadri's React & Redux Course
 - 44- Using react fragment
 - 45- Higher Order Components
 - 46- Dynamic HOC
+- 47- Passing props
 
 
 # Getting Started with Create React App

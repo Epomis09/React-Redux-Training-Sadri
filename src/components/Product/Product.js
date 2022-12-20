@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Wrapper from "../../hoc/Wrapper";
 import "./Product.css"
 
 class Product extends Component {
@@ -15,4 +16,4 @@ class Product extends Component {
   }
 }
 
-export default Product;
+export default Wrapper(Product, "product");
