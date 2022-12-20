@@ -43,7 +43,13 @@ This repository based on Sadri's React & Redux Course
 - 39- Lifecycle for state changes
 - 40- UseEffect in functional components
 - 41- Handling useEffect
-- 42 Clean up with useEffect
+- 42- Clean up with useEffect
+- 43- Rendering adjacent JSX elements
+- 44- Using react fragment
+- 45- Higher Order Components
+- 46- Dynamic HOC
+- 47- Passing props
+- 48- Using ref
 
 
 # Getting Started with Create React App
